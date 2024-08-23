@@ -129,7 +129,7 @@ namespace AssetRipper.Import.Structure.Assembly.Serializable
 			if (reader.Position != reader.Length)
 			{
 				LogMonoBehaviourMismatch(this, reader.Position, reader.Length);
-				return false;
+				return true;
 			}
 			return true;
 		}
